@@ -6,6 +6,10 @@
   --blue: hsl(248, 32%, 49%);
   --dark-blue: hsl(249, 10%, 26%);
   --grayish-blue: hsl(246, 25%, 77%);
+  --rounded: 0.25rem;
+  --rounded-lg: 0.5rem;
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 *,
@@ -14,11 +18,13 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  /* outline: 1px solid rebeccapurple; */
 }
 
 body {
   font-family: "Poppins", sans-serif;
   color: #fff;
+  line-height: 1.5;
 }
 
 .container {
@@ -29,6 +35,93 @@ body {
   flex-direction: column;
   background-color: var(--red);
   background-image: url(./images/bg-intro-mobile.png);
+}
+
+.intro {
+  margin: 4rem auto 2.5rem auto;
+  padding: 0 1.875rem;
+  text-align: center;
+}
+
+.heading-main {
+  font-size: 1.75rem;
+  padding: 1.5rem;
+}
+
+.intro-copy {
+  font-weight: 500;
+}
+
+.sign-up-form {
+  position: relative;
+}
+
+.alert {
+  background-color: var(--blue);
+  margin: 1.5rem;
+  padding: 1.25rem 3rem;
+  text-align: center;
+  border-radius: var(--rounded-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+.alert::after {
+  /* position: absolute;
+  content: "";
+  height: 0.5rem;
+  width: 330px;
+  margin: 0.75rem 1.5rem;
+  left: 0;
+  background-color: hsl(8, 63%, 61%);
+  border-radius: var(--rounded); */
+}
+
+.alert-text-bold {
+  font-weight: 700;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 1.5rem;
+  margin: 1.5rem;
+  margin-bottom: 4rem;
+  border-radius: var(--rounded-lg);
+}
+
+.form-input {
+  font-family: inherit;
+  font-weight: 600;
+  padding: 1rem;
+  border-radius: var(--rounded);
+  margin-bottom: 1rem;
+  border: 1px solid var(--grayish-blue);
+}
+
+.form-button {
+  padding: 1.25rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  border-radius: var(--rounded);
+  background-color: var(--green);
+  border-bottom: 0.25rem solid hsl(154, 59%, 46%);
+}
+
+.disclaimer {
+  padding: 0 0.75rem;
+  font-weight: 500;
+  text-align: center;
+  font-size: 0.625rem;
+  color: var(--grayish-blue);
+}
+
+.disclaimer-terms {
+  color: var(--red);
 }
 
 .footer {
@@ -43,5 +136,5 @@ body {
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--blue);
 }
