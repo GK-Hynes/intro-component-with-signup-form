@@ -15,44 +15,72 @@
     <title>Frontend Mentor | Intro component with sign up form</title>
   </head>
   <body>
-    <main class="container">
-      <div>
-        <h1>Learn to code by watching others</h1>
-        <p>
+    <div class="container">
+      <div class="intro">
+        <h1 class="heading-main">Learn to code by watching others</h1>
+        <p class="intro-copy">
           See how experienced developers solve problems in real-time. Watching
           scripted tutorials is great, but understanding how developers think is
           invaluable.
         </p>
       </div>
-      <div>
-        <div>
-          Try it free 7 days then $20/mo. thereafter
+      <div class="sign-up-form">
+        <div class="alert">
+          <p class="alert-text">
+            <span class="alert-text-bold">Try it free 7 days</span> then $20/mo.
+            thereafter
+          </p>
         </div>
-        <form action="">
-          <input type="text" name="First Name" placeholder="First Name" />
-          <input type="text" name="Last Name" placeholder="Last Name" />
-          <input type="email" name="email" placeholder="Email" />
-          <input type="text" name="address" placeholder="Address" />
-          <input type="password" name="password" placeholder="Password" />
-          <button>
+        <form action="" class="form">
+          <input
+            class="first-name-input"
+            type="text"
+            name="First Name"
+            placeholder="First Name"
+          />
+          <input
+            class="last-name-input"
+            type="text"
+            name="Last Name"
+            placeholder="Last Name"
+          />
+          <input
+            class="email-input"
+            type="email"
+            name="email"
+            placeholder="Email"
+          />
+          <input
+            class="address-input"
+            type="text"
+            name="address"
+            placeholder="Address"
+          />
+          <input
+            class="password-input"
+            type="password"
+            name="password"
+            placeholder="Password"
+          />
+          <button class="form-button">
             Claim your free trial
           </button>
-          <p>
+          <p class="disclaimer">
             By clicking the button, you are agreeing to our
-            <span>
+            <span class="terms">
               Terms and Services
             </span>
           </p>
         </form>
       </div>
-    </main>
-    <footer>
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="https://github.com/GK-Hynes">Gerard Hynes</a>.
-      </p>
-    </footer>
+      <footer class="footer">
+        <p class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="https://github.com/GK-Hynes">Gerard Hynes</a>.
+        </p>
+      </footer>
+    </div>
   </body>
 </html>
