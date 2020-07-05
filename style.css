@@ -85,7 +85,7 @@ body {
   box-shadow: 0 8px rgba(0, 0, 0, 0.2);
 }
 
-.input-wrapper {
+.input-container {
   position: relative;
   width: 100%;
   margin-bottom: 1rem;
@@ -106,28 +106,31 @@ body {
 }
 
 .error-icon {
+  display: none;
   position: absolute;
   top: 0.75rem;
-  right: 0.75rem;
+  right: 1.5rem;
 }
 
 .error-message {
+  display: none;
   padding-top: 0.25rem;
+  font-weight: 500;
   font-size: 0.75rem;
   font-style: italic;
   text-align: right;
   color: var(--red);
 }
 
-.input-wrapper.error .form-input {
+.input-container.error .form-input {
   border: 1px solid var(--red);
 }
 
-.input-wrapper.error .error-icon {
+.input-container.error .error-icon {
   display: block;
 }
 
-.input-wrapper.error .error-message {
+.input-container.error .error-message {
   display: block;
 }
 
