@@ -124,6 +124,11 @@ body {
 
 .input-container.error .form-input {
   border: 1px solid var(--red);
+  color: transparent;
+}
+
+.input-container.error .email {
+  color: var(--red);
 }
 
 .input-container.error .error-icon {
