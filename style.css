@@ -15,6 +15,7 @@
 *,
 *::before,
 *::after {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -28,6 +29,8 @@ body {
 
 .container {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   min-height: 100vh;
@@ -36,7 +39,12 @@ body {
 }
 
 .component-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   width: 100%;
   max-width: 1130px;
@@ -67,6 +75,7 @@ body {
   text-align: center;
   background-color: var(--blue);
   border-radius: var(--rounded-lg);
+  -webkit-box-shadow: 0 8px rgba(0, 0, 0, 0.2);
   box-shadow: 0 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -75,13 +84,19 @@ body {
 }
 
 .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   margin: 1.5rem;
   margin-bottom: 4rem;
   padding: 1.5rem;
   background-color: #fff;
   border-radius: var(--rounded-lg);
+  -webkit-box-shadow: 0 8px rgba(0, 0, 0, 0.2);
   box-shadow: 0 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -152,6 +167,8 @@ body {
   border-radius: var(--rounded);
   border: 1px solid hsl(154, 59%, 45%);
   border-bottom: 0.25rem solid hsl(154, 59%, 45%);
+  -webkit-transition: background-color 300ms ease;
+  -o-transition: background-color 300ms ease;
   transition: background-color 300ms ease;
 }
 
@@ -192,18 +209,31 @@ body {
 
 @media (min-width: 768px) {
   .container {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     background-image: url(./images/bg-intro-desktop.png);
   }
 
   .component-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
 
   .intro {
+    -webkit-box-flex: 9;
+    -ms-flex: 9;
     flex: 9;
     margin-top: 2rem;
   }
@@ -221,6 +251,8 @@ body {
   }
 
   .sign-up-form {
+    -webkit-box-flex: 10;
+    -ms-flex: 10;
     flex: 10;
   }
 
