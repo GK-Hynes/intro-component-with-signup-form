@@ -85,8 +85,14 @@ body {
   box-shadow: 0 8px rgba(0, 0, 0, 0.2);
 }
 
-.form-input {
+.input-wrapper {
+  position: relative;
+  width: 100%;
   margin-bottom: 1rem;
+}
+
+.form-input {
+  width: 100%;
   padding: 1rem;
   font-family: inherit;
   font-weight: 600;
@@ -97,6 +103,32 @@ body {
 .form-input:active,
 .form-input:focus {
   border: 1px solid var(--blue);
+}
+
+.error-icon {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+}
+
+.error-message {
+  padding-top: 0.25rem;
+  font-size: 0.75rem;
+  font-style: italic;
+  text-align: right;
+  color: var(--red);
+}
+
+.input-wrapper.error .form-input {
+  border: 1px solid var(--red);
+}
+
+.input-wrapper.error .error-icon {
+  display: block;
+}
+
+.input-wrapper.error .error-message {
+  display: block;
 }
 
 .form-button {

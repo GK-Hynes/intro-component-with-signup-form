@@ -33,30 +33,62 @@
             </p>
           </div>
           <form action="" class="form" autocomplete="off">
-            <input
-              class="form-input first-name-input"
-              type="text"
-              name="First Name"
-              placeholder="First Name"
-            />
-            <input
-              class="form-input last-name-input"
-              type="text"
-              name="Last Name"
-              placeholder="Last Name"
-            />
-            <input
-              class="form-input email-input"
-              type="email"
-              name="email"
-              placeholder="Email Address"
-            />
-            <input
-              class="form-input password-input"
-              type="password"
-              name="password"
-              placeholder="Password"
-            />
+            <div class="input-wrapper">
+              <input
+                class="form-input first-name-input"
+                type="text"
+                name="First Name"
+                placeholder="First Name"
+              />
+              <img
+                class="error-icon"
+                src="./images/icon-error.svg"
+                alt="error-icon"
+              />
+              <p class="error-message">First Name cannot be empty</p>
+            </div>
+            <div class="input-wrapper">
+              <input
+                class="form-input last-name-input"
+                type="text"
+                name="Last Name"
+                placeholder="Last Name"
+              />
+              <img
+                class="error-icon"
+                src="./images/icon-error.svg"
+                alt="error-icon"
+              />
+              <p class="error-message">Last Name cannot be empty</p>
+            </div>
+            <div class="input-wrapper">
+              <input
+                class="form-input email-input"
+                type="email"
+                name="email"
+                placeholder="Email Address"
+              />
+              <img
+                class="error-icon"
+                src="./images/icon-error.svg"
+                alt="error-icon"
+              />
+              <p class="error-message">Looks like this is not an email</p>
+            </div>
+            <div class="input-wrapper">
+              <input
+                class="form-input password-input"
+                type="password"
+                name="password"
+                placeholder="Password"
+              />
+              <img
+                class="error-icon"
+                src="./images/icon-error.svg"
+                alt="error-icon"
+              />
+              <p class="error-message">Password cannot be empty</p>
+            </div>
             <button class="form-button">
               Claim your free trial
             </button>
