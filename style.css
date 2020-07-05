@@ -115,7 +115,7 @@ body {
 
 .disclaimer-terms {
   color: var(--red);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .footer {
@@ -123,6 +123,7 @@ body {
   bottom: 0;
   left: 0;
   padding: 1rem;
+  width: 100%;
 }
 
 .attribution {
@@ -131,4 +132,46 @@ body {
 }
 .attribution a {
   color: var(--blue);
+}
+
+@media (min-width: 640px) {
+  .container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/bg-intro-desktop.png);
+  }
+
+  .intro {
+    max-width: 570px;
+    margin-left: auto;
+  }
+
+  .heading-main {
+    padding-left: 0;
+    font-size: 3rem;
+    text-align: left;
+    line-height: 1.2;
+  }
+
+  .intro-copy {
+    text-align: left;
+  }
+
+  .sign-up-form {
+    margin-right: auto;
+  }
+
+  .promotion {
+    min-width: 540px;
+  }
+
+  .form {
+    min-width: 540px;
+    padding: 2.25rem;
+  }
+
+  .form-button {
+    margin-bottom: 1rem;
+  }
 }
